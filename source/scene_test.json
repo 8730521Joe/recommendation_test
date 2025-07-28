@@ -1,0 +1,17 @@
+[
+  {
+    "scene_name": "放松",
+    "time_period": ["19-24点"],
+    "date_type": "皆可",
+    "poi_type": ["家", "酒店"],
+    "movement_status": "静止",
+    "weather": "--",
+    "light_lux": "[0-50]弱光",
+    "noise_level": ["安静"],
+    "physical_activity": "静止",
+    "heart_rate_level": "静息",
+    "network_status": ["家用Wi-Fi"],
+    "bluetooth_connection": ["音响", "耳机", "无"],
+    "calendar_keywords": "--"
+  }
+]
