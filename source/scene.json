@@ -93,15 +93,13 @@
       "weather": ["--"],
       "physical_activity": ["*跑步"],
       "heart_rate_level": ["*高", "极高"],
-      "network_status": ["公共Wi-Fi", "数据"],
+      "network_status": ["公共Wi-Fi", "蜂窝数据"],
       "bluetooth_connection": ["*耳机"],
       "calendar_keywords": ["*健身"],
       "questionnaire_info": ["--"]
     },
     "exclude": {
-      "physical_activity": ["静止", "静坐", "站立"],
-      "heart_rate_level": ["静息", "下降", "稳定偏高"],
-      "movement_status": ["静止", "慢速移动"]
+      "heart_rate_level": ["静息", "下降"]
     }
   },
   {
@@ -424,15 +422,15 @@
       "movement_status": ["*静止"],
       "weather": ["--"],
       "physical_activity": ["*静止"],
-      "heart_rate_level": ["*稳定偏高"],
+      "heart_rate_level": ["稳定偏高","静息"],
       "network_status": ["*公司Wi-Fi"],
       "bluetooth_connection": ["耳机", "无"],
-      "calendar_keywords": ["*会议"],
+      "calendar_keywords": ["--"],
       "questionnaire_info": ["--"]
     },
     "exclude": {
       "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["静息", "下降", "极高"],
+      "heart_rate_level": [ "下降", "极高"],
       "movement_status": ["高速移动", "跑步", "高活动度"]
     }
   },
@@ -508,7 +506,7 @@
       "weather": ["--"],
       "physical_activity": ["*静止"],
       "heart_rate_level": ["*静息", "上升"],
-      "network_status": ["*家用Wi-Fi"],
+      "network_status": ["*家用Wi-Fi","公共Wi-Fi"],
       "bluetooth_connection": ["无"],
       "calendar_keywords": ["--"],
       "questionnaire_info": ["--"]

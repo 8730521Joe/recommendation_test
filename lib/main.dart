@@ -80,14 +80,13 @@ class _SceneSimulatorPageState extends State<SceneSimulatorPage> {
       double score = 0;
       bool excluded = false;
 
-      // Check for exclusions first
+      // Check for exclusions
       if (scene.exclude != null) {
         scene.exclude!.forEach((key, value) {
           final userValue = userInput[key];
           if (userValue == null || (userValue is String && userValue.isEmpty)) {
             return;
           }
-
           if (value is List) {
             for (var v in value) {
               if (_isMatch(userValue.toString(), v.toString())) {
@@ -105,13 +104,12 @@ class _SceneSimulatorPageState extends State<SceneSimulatorPage> {
       }
 
       if (excluded) {
-        scoredScenes.add(ResultScene(scene.sceneName, -5));
+        scoredScenes.add(ResultScene(scene.sceneName, -1)); // Assign a very low score
         continue;
       }
 
-      scene.toJson().forEach((key, value) {
-        if (key == 'scene_name' || key == 'exclude') return;
-
+      // Calculate score based on conditions
+      scene.conditions.forEach((key, value) {
         final userValue = userInput[key];
         if (userValue == null || (userValue is String && userValue.isEmpty)) {
           return;
@@ -120,10 +118,8 @@ class _SceneSimulatorPageState extends State<SceneSimulatorPage> {
         final sceneValue = value;
 
         if (sceneValue is List) {
-          bool isMatch = false;
           for (var v in sceneValue) {
             if (_isMatch(userValue.toString(), v.toString())) {
-              isMatch = true;
               if (v.toString().startsWith('*')) {
                 score += 3; // Strong association
               } else {
@@ -147,7 +143,7 @@ class _SceneSimulatorPageState extends State<SceneSimulatorPage> {
     scoredScenes.sort((a, b) => b.score.compareTo(a.score));
 
     setState(() {
-      _resultScenes = scoredScenes.take(5).toList();
+      _resultScenes = scoredScenes.where((s) => s.score >= 0).take(5).toList();
     });
   }
 
@@ -263,49 +259,20 @@ class _SceneSimulatorPageState extends State<SceneSimulatorPage> {
 
 class Scene {
   final String sceneName;
-  final dynamic timePeriod;
-  final dynamic dateType;
-  final dynamic poiType;
-  final dynamic movementStatus;
-  final dynamic weather;
-  final dynamic physicalActivity;
-  final dynamic heartRateLevel;
-  final dynamic networkStatus;
-  final dynamic bluetoothConnection;
-  final dynamic calendarKeywords;
-  final dynamic questionnaireInfo;
+  final Map<String, dynamic> conditions;
   final Map<String, dynamic>? exclude;
 
   Scene.fromJson(Map<String, dynamic> json)
       : sceneName = json['scene_name'],
-        timePeriod = json['time_period'],
-        dateType = json['date_type'],
-        poiType = json['poi_type'],
-        movementStatus = json['movement_status'],
-        weather = json['weather'],
-        physicalActivity = json['physical_activity'],
-        heartRateLevel = json['heart_rate_level'],
-        networkStatus = json['network_status'],
-        bluetoothConnection = json['bluetooth_connection'],
-        calendarKeywords = json['calendar_keywords'],
-        questionnaireInfo = json['questionnaire_info'],
-        exclude = json['exclude'] as Map<String, dynamic>?;
+        conditions = json['conditions'] ?? _extractConditions(json),
+        exclude = json['exclude'];
 
-  Map<String, dynamic> toJson() => {
-        'scene_name': sceneName,
-        'time_period': timePeriod,
-        'date_type': dateType,
-        'poi_type': poiType,
-        'movement_status': movementStatus,
-        'weather': weather,
-        'physical_activity': physicalActivity,
-        'heart_rate_level': heartRateLevel,
-        'network_status': networkStatus,
-        'bluetooth_connection': bluetoothConnection,
-        'calendar_keywords': calendarKeywords,
-        'questionnaire_info': questionnaireInfo,
-        'exclude': exclude,
-      };
+  static Map<String, dynamic> _extractConditions(Map<String, dynamic> json) {
+    final conditions = Map<String, dynamic>.from(json);
+    conditions.remove('scene_name');
+    conditions.remove('exclude');
+    return conditions;
+  }
 }
 
 class ResultScene {
