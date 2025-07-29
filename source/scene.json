@@ -168,8 +168,8 @@
     "conditions": {
       "time_period": ["皆可"],
       "date_type": "皆可",
-      "poi_type": ["*机场"],
-      "movement_status": ["静止", "高速移动"],
+      "poi_type": ["*机场","在途"],
+      "movement_status": ["高速移动"],
       "weather": ["--"],
       "physical_activity": ["在车上", "静止"],
       "heart_rate_level": ["*稍高"],
@@ -209,7 +209,7 @@
     "conditions": {
       "time_period": ["皆可"],
       "date_type": "皆可",
-      "poi_type": ["在途"],
+      "poi_type": ["沿线","在途"],
       "movement_status": ["*高速移动"],
       "weather": ["--"],
       "physical_activity": ["在车上"],
