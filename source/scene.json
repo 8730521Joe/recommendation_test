@@ -1,686 +1,3756 @@
 [
   {
-    "scene_name": "放松",
-    "conditions": {
-      "time_period": ["*19-24点"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "酒店", "公园"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息"],
-      "network_status": ["*家用Wi-Fi"],
-      "bluetooth_connection": ["音响", "耳机", "无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
+    "scene_name": "放松摸鱼",
+    "strong_correlation_index": {
+      "time_period": [
+        "10:00-11:59",
+        "14:00-16:59"
+      ],
+      "date_type": [
+        "工作日"
+      ],
+      "poi_type": [
+        "写字楼"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["高", "极高", "波动", "上升"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "related_index": {
+      "time_period": [
+        "09:00-09:59",
+        "17:00-17:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [
+        "wifi",
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "无"
+      ],
+      "questionnaire_info": [
+        "学生"
+      ]
+    },
+    "unrelated": {
+      "time_period": [
+        "12:00-13:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": [
+        "母婴用户",
+        "女性",
+        "养宠物"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [
+        "08:00-08:59",
+        "18:00-21:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "慢速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行"
+      ],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "00:00-07:59",
+        "22:00-23:59"
+      ],
+      "date_type": [
+        "周末",
+        "假日"
+      ],
+      "poi_type": [
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "机场",
+        "图书馆",
+        "海边",
+        "户外",
+        "在途",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
     }
   },
   {
-    "scene_name": "快乐时光",
-    "conditions": {
-      "time_period": ["*18-24点"],
-      "date_type": ["*周末", "*假日"],
-      "poi_type": ["*家", "餐厅", "公园"],
-      "movement_status": ["静止", "慢速移动"],
-      "weather": ["--"],
-      "physical_activity": ["站立", "静坐"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["公共Wi-Fi", "蜂窝数据"],
-      "bluetooth_connection": ["音响", "无"],
-      "calendar_keywords": ["派对", "聚会"],
-      "questionnaire_info": ["--"]
+    "scene_name": "沉浸图书馆",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "图书馆"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": [
+        "学生"
+      ]
     },
-    "exclude": {
-      "physical_activity": ["跑步", "高活动度"],
-      "heart_rate_level": ["静息", "下降", "极高"],
-      "movement_status": ["高速移动", "跑步"]
+    "related_index": {
+      "time_period": [
+        "09:00-21:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [
+        "无",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "女性",
+        "养宠物"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [
+        "22:00-23:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "慢速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行"
+      ],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "00:00-08:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "写字楼",
+        "机场",
+        "海边",
+        "户外",
+        "在途",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "车载",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "母婴用户"
+      ]
     }
   },
   {
-    "scene_name": "图书馆",
-    "conditions": {
-      "time_period": ["*09-22点"],
-      "date_type": "皆可",
-      "poi_type": ["*图书馆/书店"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息"],
-      "network_status": ["*公共Wi-Fi"],
-      "bluetooth_connection": ["*耳机"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
+    "scene_name": "律动健身",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [
+        "无线耳机"
+      ],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "高", "波动", "上升"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "户外",
+        "公园",
+        "住宅区"
+      ],
+      "movement_status": [
+        "静止",
+        "慢速"
+      ],
+      "weather": [
+        "晴",
+        "阴"
+      ],
+      "physical_activity": [
+        "静止",
+        "步行",
+        "骑行"
+      ],
+      "heart_rate_level": [],
+      "network_status": [
+        "wifi",
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "其他蓝牙",
+        "无"
+      ],
+      "questionnaire_info": [
+        "学生"
+      ]
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": [
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "商场"
+      ],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "无网络"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "图书馆",
+        "餐厅",
+        "写字楼",
+        "在途",
+        "机场",
+        "酒店",
+        "海边",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [],
+      "weather": [
+        "雨"
+      ],
+      "physical_activity": [
+        "驾车"
+      ],
+      "heart_rate_level": [
+        "静息",
+        "稍高"
+      ],
+      "network_status": [
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
     }
   },
   {
-    "scene_name": "摸鱼",
-    "conditions": {
-      "time_period": ["*10-17点"],
-      "date_type": ["*工作日"],
-      "poi_type": ["*公司/办公室"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["静止"],
-      "heart_rate_level": ["*静息", "稍高"],
-      "network_status": ["*公司Wi-Fi"],
-      "bluetooth_connection": ["*耳机"],
-      "calendar_keywords": ["!=会议"],
-      "questionnaire_info": ["--"]
+    "scene_name": "工作通勤",
+    "strong_correlation_index": {
+      "time_period": [
+        "07:00-09:59",
+        "17:00-19:59"
+      ],
+      "date_type": [
+        "工作日"
+      ],
+      "poi_type": [
+        "在途",
+        "地铁站",
+        "高铁站"
+      ],
+      "movement_status": [
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "驾车",
+        "步行"
+      ],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "高", "波动"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "慢速"
+      ],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [
+        "静止",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "静息",
+        "稍高"
+      ],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "车载"
+      ],
+      "questionnaire_info": [
+        "学生"
+      ]
+    },
+    "unrelated": {
+      "time_period": [
+        "06:00-06:59",
+        "10:00-10:59",
+        "20:00-20:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [
+        "无",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "波动"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "00:00-05:59",
+        "11:00-16:59",
+        "21:00-23:59"
+      ],
+      "date_type": [
+        "周末",
+        "假日"
+      ],
+      "poi_type": [
+        "住宅区",
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "写字楼",
+        "机场",
+        "图书馆",
+        "海边",
+        "户外"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步"
+      ],
+      "heart_rate_level": [
+        "高"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
     }
   },
   {
-    "scene_name": "动感健身",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["*健身房", "户外公园"],
-      "movement_status": ["*跑步", "高活动度"],
-      "weather": ["--"],
-      "physical_activity": ["*跑步"],
-      "heart_rate_level": ["*高", "极高"],
-      "network_status": ["公共Wi-Fi", "蜂窝数据"],
-      "bluetooth_connection": ["*耳机"],
-      "calendar_keywords": ["*健身"],
-      "questionnaire_info": ["--"]
+    "scene_name": "游戏玩家",
+    "strong_correlation_index": {
+      "time_period": [
+        "20:00-23:59",
+        "00:00-01:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "heart_rate_level": ["静息", "下降"]
+    "related_index": {
+      "time_period": [
+        "18:00-19:59"
+      ],
+      "date_type": [
+        "周末",
+        "假日",
+        "工作日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "稍高",
+        "波动"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "学生"
+      ]
+    },
+    "unrelated": {
+      "time_period": [
+        "02:00-05:59",
+        "12:00-13:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [
+        "无"
+      ],
+      "questionnaire_info": [
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [
+        "14:00-17:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "06:00-11:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "写字楼",
+        "机场",
+        "图书馆",
+        "海边",
+        "户外",
+        "在途",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
     }
   },
   {
-    "scene_name": "洗澡",
-    "conditions": {
-      "time_period": ["07-09", "20-24"],
-      "date_type": "皆可",
-      "poi_type": ["*家"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["静止"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["*家用Wi-Fi"],
-      "bluetooth_connection": ["音响", "无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
+    "scene_name": "深夜专注",
+    "strong_correlation_index": {
+      "time_period": [
+        "22:00-23:59",
+        "00:00-02:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["静息", "极高", "下降"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "日常通勤",
-    "conditions": {
-      "time_period": ["*07-09", "*17-19"],
-      "date_type": ["*工作日"],
-      "poi_type": ["在途"],
-      "movement_status": ["*高速移动"],
-      "weather": ["--"],
-      "physical_activity": ["在车上"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["*蜂窝数据"],
-      "bluetooth_connection": ["耳机", "车载"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "图书馆"
+      ],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": [
+        "学生"
+      ]
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "movement_status": ["静止", "慢速移动"]
-    }
-  },
-  {
-    "scene_name": "地铁",
-    "conditions": {
-      "time_period": ["*07-09", "*17-19"],
-      "date_type": ["*工作日"],
-      "poi_type": ["*地铁站/沿线"],
-      "movement_status": ["*高速移动"],
-      "weather": ["--"],
-      "physical_activity": ["在车上"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["*蜂窝数据(弱)"],
-      "bluetooth_connection": ["*耳机"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
+    "unrelated": {
+      "time_period": [
+        "03:00-06:59",
+        "21:00-21:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [
+        "写字楼"
+      ],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "无",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "movement_status": ["静止", "慢速移动"]
-    }
-  },
-  {
-    "scene_name": "乘机",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["*机场","在途"],
-      "movement_status": ["高速移动"],
-      "weather": ["--"],
-      "physical_activity": ["在车上", "静止"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["*机场Wi-Fi", "*无网络"],
-      "bluetooth_connection": ["耳机"],
-      "calendar_keywords": ["*航班", "*机场"],
-      "questionnaire_info": ["--"]
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "下降"]
-    }
-  },
-  {
-    "scene_name": "躺平",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": ["周末", "假日"],
-      "poi_type": ["*家"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息"],
-      "network_status": ["*家用Wi-Fi"],
-      "bluetooth_connection": ["耳机", "音响", "无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "高", "波动", "上升"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "驾车",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["沿线","在途"],
-      "movement_status": ["*高速移动"],
-      "weather": ["--"],
-      "physical_activity": ["在车上"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["*蜂窝数据"],
-      "bluetooth_connection": ["*车载蓝牙"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "movement_status": ["静止", "慢速移动"]
-    }
-  },
-  {
-    "scene_name": "夜晚",
-    "conditions": {
-      "time_period": ["*21-05点"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "酒店", "户外"],
-      "movement_status": ["静止", "慢速移动"],
-      "weather": ["--"],
-      "physical_activity": ["静止", "步行"],
-      "heart_rate_level": ["*静息", "稍高"],
-      "network_status": ["*家用Wi-Fi", "蜂窝数据"],
-      "bluetooth_connection": ["耳机", "无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "高活动度"],
-      "heart_rate_level": ["极高", "高", "波动"],
-      "movement_status": ["高速移动", "跑步"]
-    }
-  },
-  {
-    "scene_name": "治愈",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "咖啡馆", "自然环境"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息", "下降"],
-      "network_status": ["*家用Wi-Fi", "无"],
-      "bluetooth_connection": ["*耳机"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "高", "波动", "上升"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "小酒馆",
-    "conditions": {
-      "time_period": ["*20-02点"],
-      "date_type": ["周末", "假日"],
-      "poi_type": ["*酒吧", "*酒馆"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["公共Wi-Fi", "蜂窝数据"],
-      "bluetooth_connection": ["无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["静息", "下降", "极高"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "晨间唤醒",
-    "conditions": {
-      "time_period": ["*06-09点"],
-      "date_type": "皆可",
-      "poi_type": ["*家"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息", "上升"],
-      "network_status": ["*家用Wi-Fi"],
-      "bluetooth_connection": ["无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "下降"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "佛系时间",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": ["周末", "假日"],
-      "poi_type": ["*家", "寺庙", "茶馆"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息"],
-      "network_status": ["--"],
-      "bluetooth_connection": ["无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "高", "波动", "上升"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "露营",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": ["周末", "假日"],
-      "poi_type": ["*户外", "*自然", "*营地"],
-      "movement_status": ["静止", "慢速移动"],
-      "weather": ["*晴", "*多云"],
-      "physical_activity": ["站立", "步行"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["*无网络", "蜂窝数据"],
-      "bluetooth_connection": ["音响", "无"],
-      "calendar_keywords": ["*露营"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "高活动度"],
-      "heart_rate_level": ["静息", "下降"],
-      "movement_status": ["高速移动", "跑步"]
-    }
-  },
-  {
-    "scene_name": "雨天",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["*室内(家)", "*室内(公司)", "*室内(咖啡馆)"],
-      "movement_status": ["*静止"],
-      "weather": ["*雨"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息"],
-      "network_status": ["Wi-Fi"],
-      "bluetooth_connection": ["耳机", "音响", "无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "高", "波动", "上升"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "海边",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": ["周末", "假日"],
-      "poi_type": ["*海滩", "*海边"],
-      "movement_status": ["静止", "步行"],
-      "weather": ["*晴", "*多云"],
-      "physical_activity": ["*步行", "静止"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["*蜂窝数据"],
-      "bluetooth_connection": ["无", "耳机"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "高活动度"],
-      "heart_rate_level": ["静息", "下降"],
-      "movement_status": ["高速移动", "跑步"]
+    "exclusion_index": {
+      "time_period": [
+        "07:00-20:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "机场",
+        "海边",
+        "户外",
+        "在途",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
     }
   },
   {
     "scene_name": "专注时钟",
-    "conditions": {
-      "time_period": ["*09-12", "*14-17"],
-      "date_type": ["*工作日"],
-      "poi_type": ["*公司", "图书馆", "家"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*稳定偏高"],
-      "network_status": ["公司Wi-Fi", "家用Wi-Fi"],
-      "bluetooth_connection": ["*耳机"],
-      "calendar_keywords": ["*专注", "*工作"],
-      "questionnaire_info": ["--"]
+    "strong_correlation_index": {
+      "time_period": [
+        "09:00-11:59",
+        "14:00-16:59"
+      ],
+      "date_type": [
+        "工作日"
+      ],
+      "poi_type": [],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["静息", "下降", "极高"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "related_index": {
+      "time_period": [
+        "17:00-21:59"
+      ],
+      "date_type": [
+        "周末",
+        "假日"
+      ],
+      "poi_type": [
+        "写字楼",
+        "图书馆",
+        "住宅区"
+      ],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [
+        "wifi",
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": [
+        "学生"
+      ]
+    },
+    "unrelated": {
+      "time_period": [
+        "08:00-08:59",
+        "12:00-13:59",
+        "22:00-23:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "无",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "00:00-07:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "机场",
+        "海边",
+        "户外",
+        "在途",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
     }
   },
   {
-    "scene_name": "工作",
-    "conditions": {
-      "time_period": ["*09-18点"],
-      "date_type": ["*工作日"],
-      "poi_type": ["*公司", "办公室"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["稳定偏高","静息"],
-      "network_status": ["*公司Wi-Fi"],
-      "bluetooth_connection": ["耳机", "无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
+    "scene_name": "沉浸工作",
+    "strong_correlation_index": {
+      "time_period": [
+        "09:00-11:59",
+        "14:00-17:59"
+      ],
+      "date_type": [
+        "工作日"
+      ],
+      "poi_type": [
+        "写字楼"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": [ "下降", "极高"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "related_index": {
+      "time_period": [
+        "18:00-21:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "稍高",
+        "静息"
+      ],
+      "network_status": [
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "无"
+      ],
+      "questionnaire_info": [
+        "学生"
+      ]
+    },
+    "unrelated": {
+      "time_period": [
+        "08:00-08:59",
+        "12:00-13:59",
+        "22:00-23:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [
+        "慢速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行"
+      ],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "00:00-07:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "图书馆",
+        "在途",
+        "机场",
+        "海边",
+        "户外",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
     }
   },
   {
-    "scene_name": "阅读",
-    "conditions": {
-      "time_period": ["14-17", "20-23"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "图书馆", "咖啡馆"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息"],
-      "network_status": ["Wi-Fi"],
-      "bluetooth_connection": ["耳机", "无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
+    "scene_name": "安静阅读",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "高", "波动", "上升", "稳定偏高"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "related_index": {
+      "time_period": [
+        "14:00-17:59",
+        "20:00-22:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "图书馆",
+        "餐厅"
+      ],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "无"
+      ],
+      "questionnaire_info": [
+        "学生"
+      ]
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-13:59",
+        "18:00-19:59",
+        "23:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "在途",
+        "公园",
+        "写字楼",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "户外",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
     }
   },
   {
-    "scene_name": "睡眠",
-    "conditions": {
-      "time_period": ["*22-07点"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "酒店"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息"],
-      "network_status": ["Wi-Fi"],
-      "bluetooth_connection": ["*无"],
-      "calendar_keywords": ["*睡眠"],
-      "questionnaire_info": ["--"]
+    "scene_name": "深度睡眠",
+    "strong_correlation_index": {
+      "time_period": [
+        "22:00-23:59",
+        "00:00-06:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "酒店"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [
+        "无"
+      ],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "站立", "高活动度"],
-      "heart_rate_level": ["高", "极高", "波动", "上升", "稳定偏高"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "related_index": {
+      "time_period": [
+        "07:00-08:59",
+        "21:00-21:59"],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "wifi",
+        "无网络"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "09:00-20:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "在途",
+        "写字楼",
+        "公园",
+        "图书馆",
+        "餐厅",
+        "商场",
+        "海边",
+        "户外",
+        "机场",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "稍高",
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "车载",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
     }
   },
   {
     "scene_name": "释放压力",
-    "conditions": {
-      "time_period": ["*18-24点"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "健身房", "户外"],
-      "movement_status": ["静止", "高活动度"],
-      "weather": ["--"],
-      "physical_activity": ["静止", "高活动度"],
-      "heart_rate_level": ["*高", "波动"],
-      "network_status": ["--"],
-      "bluetooth_connection": ["耳机", "音响"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["静坐", "在车上"],
-      "heart_rate_level": ["静息", "下降"]
+    "related_index": {
+      "time_period": [
+        "18:00-23:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-17:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [
+        "住宅区",
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "写字楼",
+        "机场",
+        "图书馆",
+        "海边",
+        "户外",
+        "在途",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "静止",
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止",
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [
+        "wifi",
+        "蜂窝数据",
+        "无网络",
+        "飞行模式",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "无"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
     }
   },
   {
-    "scene_name": "叫醒",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "公司"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息", "上升"],
-      "network_status": ["*家用Wi-Fi","公共Wi-Fi"],
-      "bluetooth_connection": ["无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
+    "scene_name": "婴儿安睡",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [
+        "无"
+      ],
+      "questionnaire_info": [
+        "母婴用户"
+      ]
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "下降"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "女性"
+      ]
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "写字楼",
+        "机场",
+        "图书馆",
+        "海边",
+        "户外",
+        "在途",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "车载"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "养宠物"
+      ]
     }
   },
   {
-    "scene_name": "冥想",
-    "conditions": {
-      "time_period": ["*06-09", "*21-23"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "瑜伽馆"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息", "下降"],
-      "network_status": ["Wi-Fi"],
-      "bluetooth_connection": ["耳机", "无"],
-      "calendar_keywords": ["*冥想"],
-      "questionnaire_info": ["--"]
+    "scene_name": "准妈妈胎教",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": [
+        "母婴用户",
+        "女性"
+      ]
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "高", "波动", "上升", "稳定偏高"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "婴儿睡眠",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["*家"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["--"],
-      "network_status": ["*家用Wi-Fi"],
-      "bluetooth_connection": ["*无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["*是母婴用户"]
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [
+        "其他蓝牙",
+        "无"
+      ],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "创造",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "公司", "工作室"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*稳定偏高"],
-      "network_status": ["Wi-Fi"],
-      "bluetooth_connection": ["耳机", "音响"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["*创意工作者"]
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "下降"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "快速任务",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["皆可"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*稳定偏高"],
-      "network_status": ["Wi-Fi"],
-      "bluetooth_connection": ["*耳机"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "下降"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "家务",
-    "conditions": {
-      "time_period": ["*09-12", "*18-20"],
-      "date_type": ["周末", "假日"],
-      "poi_type": ["*家"],
-      "movement_status": ["*步行", "站立"],
-      "weather": ["--"],
-      "physical_activity": ["*步行"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["*家用Wi-Fi"],
-      "bluetooth_connection": ["音响", "无"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["--"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "高活动度"],
-      "heart_rate_level": ["静息", "下降", "极高"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
-    }
-  },
-  {
-    "scene_name": "母婴",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "早教中心"],
-      "movement_status": ["静止", "慢速移动"],
-      "weather": ["--"],
-      "physical_activity": ["静止", "步行"],
-      "heart_rate_level": ["--"],
-      "network_status": ["Wi-Fi"],
-      "bluetooth_connection": ["无", "音响"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["*是母婴用户"]
-    },
-    "exclude": {
-      "physical_activity": ["跑步", "高活动度"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "在途",
+        "写字楼",
+        "公园",
+        "图书馆",
+        "餐厅",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "户外",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "车载"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "养宠物"
+      ]
     }
   },
   {
     "scene_name": "宠物陪伴",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["*家", "户外公园"],
-      "movement_status": ["静止", "步行"],
-      "weather": ["--"],
-      "physical_activity": ["静止", "步行"],
-      "heart_rate_level": ["*稍高"],
-      "network_status": ["Wi-Fi", "蜂窝数据"],
-      "bluetooth_connection": ["无", "音响"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["*养宠物"]
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "公园"
+      ],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [
+        "步行"
+      ],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": [
+        "养宠物"
+      ]
     },
-    "exclude": {
-      "physical_activity": ["跑步", "高活动度"],
-      "heart_rate_level": ["静息", "下降", "极高"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "户外"
+      ],
+      "movement_status": [
+        "静止",
+        "慢速",
+        "中速"
+      ],
+      "weather": [
+        "晴",
+        "阴"
+      ],
+      "physical_activity": [
+        "静止",
+        "跑步"
+      ],
+      "heart_rate_level": [
+        "静息",
+        "稍高",
+        "波动"
+      ],
+      "network_status": [
+        "wifi",
+        "蜂窝数据",
+        "无网络"
+      ],
+      "bluetooth_connection": [
+        "无",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": [
+        "女性",
+        "学生"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "高"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "写字楼",
+        "图书馆",
+        "餐厅",
+        "在途",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [],
+      "weather": [
+        "雨"
+      ],
+      "physical_activity": [
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [],
+      "network_status": [
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": [
+        "母婴用户"
+      ]
     }
   },
   {
-    "scene_name": "经期不适舒缓",
-    "conditions": {
-      "time_period": ["皆可"],
-      "date_type": "皆可",
-      "poi_type": ["*家"],
-      "movement_status": ["*静止"],
-      "weather": ["--"],
-      "physical_activity": ["*静止"],
-      "heart_rate_level": ["*静息", "稍高"],
-      "network_status": ["*家用Wi-Fi"],
-      "bluetooth_connection": ["无", "耳机"],
-      "calendar_keywords": ["--"],
-      "questionnaire_info": ["*女性"]
+    "scene_name": "经期舒缓",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": [
+        "女性"
+      ]
     },
-    "exclude": {
-      "physical_activity": ["跑步", "步行", "高活动度"],
-      "heart_rate_level": ["极高", "高", "波动", "上升"],
-      "movement_status": ["高速移动", "跑步", "高活动度"]
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "静息",
+        "稍高"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [
+        "无",
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "在途",
+        "公园",
+        "写字楼",
+        "图书馆",
+        "餐厅",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "户外",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "养宠物",
+        "母婴用户"
+      ]
+    }
+  },
+  {
+    "scene_name": "睡个午觉",
+    "strong_correlation_index": {
+      "time_period": [
+        "12:00-14:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "写字楼"
+      ],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "wifi",
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [
+        "无",
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "10:00-11:59",
+        "15:00-17:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "00:00-09:59",
+        "18:00-23:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "在途",
+        "公园",
+        "图书馆",
+        "餐厅",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "户外",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "稍高",
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "节奏跑步",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "户外",
+        "公园"
+      ],
+      "movement_status": [
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步"
+      ],
+      "heart_rate_level": [
+        "高"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [
+        "无线耳机"
+      ],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "中速"
+      ],
+      "weather": [
+        "晴",
+        "阴"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "波动"
+      ],
+      "network_status": [
+        "蜂窝数据",
+        "无网络"
+      ],
+      "bluetooth_connection": [
+        "有线耳机"
+      ],
+      "questionnaire_info": [
+        "学生"
+      ]
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "图书馆",
+        "餐厅",
+        "写字楼",
+        "在途",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "静止",
+        "慢速"
+      ],
+      "weather": [
+        "雨"
+      ],
+      "physical_activity": [
+        "静止",
+        "步行",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "静息",
+        "稍高"
+      ],
+      "network_status": [
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "无",
+        "其他蓝牙",
+        "车载"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "瑜伽运动",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "户外"
+      ],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "静息",
+        "稍高"
+      ],
+      "network_status": [
+        "wifi",
+        "无网络"
+      ],
+      "bluetooth_connection": [
+        "无",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "女性"
+      ]
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "波动"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "在途",
+        "写字楼",
+        "公园",
+        "图书馆",
+        "餐厅",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高"
+      ],
+      "network_status": [
+        "蜂窝数据",
+        "飞行模式",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "冥想",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [
+        "06:00-08:59",
+        "21:00-23:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "户外"
+      ],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "wifi",
+        "无网络"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "无"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-05:59",
+        "09:00-20:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "餐厅",
+        "写字楼",
+        "在途",
+        "公园",
+        "图书馆",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "稍高",
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "蜂窝数据",
+        "飞行模式",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "车载",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "深夜 EMO",
+    "strong_correlation_index": {
+      "time_period": [
+        "23:00-23:59",
+        "00:00-03:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "静息",
+        "稍高"
+      ],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "其他蓝牙",
+        "无"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "04:00-07:59",
+        "22:00-22:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "波动"
+      ],
+      "network_status": [
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "08:00-21:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "写字楼",
+        "公园",
+        "图书馆",
+        "餐厅",
+        "在途",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "快乐时光",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [
+        "18:00-23:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "餐厅",
+        "商场",
+        "公园"
+      ],
+      "movement_status": [
+        "静止",
+        "慢速"
+      ],
+      "weather": [
+        "晴",
+        "阴"
+      ],
+      "physical_activity": [
+        "静止",
+        "步行"
+      ],
+      "heart_rate_level": [
+        "稍高",
+        "波动"
+      ],
+      "network_status": [
+        "wifi",
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [
+        "其他蓝牙",
+        "无"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-00:59",
+        "10:00-17:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "高"
+      ],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "中速"
+      ],
+      "weather": [
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "01:00-09:59"
+      ],
+      "date_type": [
+        "工作日"
+      ],
+      "poi_type": [
+        "写字楼",
+        "图书馆"
+      ],
+      "movement_status": [
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "驾车远行",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "在途"
+      ],
+      "movement_status": [
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "驾车"
+      ],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "中速"
+      ],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "静息",
+        "稍高"
+      ],
+      "network_status": [
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "波动"
+      ],
+      "network_status": [
+        "无网络"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "写字楼",
+        "机场",
+        "图书馆",
+        "海边",
+        "户外",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "静止",
+        "慢速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止",
+        "步行",
+        "跑步",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高"
+      ],
+      "network_status": [
+        "wifi",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "其他蓝牙",
+        "无"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "自我疗愈",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "户外"
+      ],
+      "movement_status": [],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [
+        "wifi",
+        "无网络"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "无"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [
+        "其他蓝牙"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "餐厅",
+        "写字楼",
+        "在途",
+        "公园",
+        "图书馆",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "蜂窝数据",
+        "飞行模式",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "车载",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "微醺时刻",
+    "strong_correlation_index": {
+      "time_period": [
+        "20:00-23:59",
+        "00:00-01:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "餐厅"
+      ],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [],
+      "date_type": [
+        "周末",
+        "假日"
+      ],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [
+        "慢速"
+      ],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [
+        "步行"
+      ],
+      "heart_rate_level": [
+        "静息",
+        "稍高"
+      ],
+      "network_status": [
+        "wifi",
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [
+        "无",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "02:00-05:59",
+        "19:00-19:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [
+        "工作日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "波动"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "06:00-18:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "写字楼",
+        "图书馆",
+        "公园",
+        "在途",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "户外",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "元气早晨",
+    "strong_correlation_index": {
+      "time_period": [
+        "06:00-09:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "静止",
+        "慢速"
+      ],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [
+        "静止",
+        "步行"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [
+        "wifi",
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [
+        "无",
+        "其他蓝牙"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "05:00-05:59",
+        "10:00-11:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [
+        "00:00-04:59",
+        "12:00-23:59"
+      ],
+      "date_type": [],
+      "poi_type": [
+        "在途",
+        "写字楼",
+        "公园",
+        "图书馆",
+        "餐厅",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "户外",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "灵感创造",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "静止",
+        "慢速"
+      ],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [
+        "静止",
+        "步行"
+      ],
+      "heart_rate_level": [
+        "稍高",
+        "波动"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [
+        "住宅区",
+        "商场",
+        "酒店",
+        "餐厅",
+        "公园",
+        "写字楼",
+        "机场",
+        "图书馆",
+        "海边",
+        "户外",
+        "在途",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "高"
+      ],
+      "network_status": [
+        "wifi",
+        "蜂窝数据",
+        "无网络",
+        "飞行模式",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "其他蓝牙",
+        "无",
+        "车载"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "中速",
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "家务时光",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区"
+      ],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [
+        "步行"
+      ],
+      "heart_rate_level": [],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [
+        "09:00-11:59",
+        "18:00-20:59"
+      ],
+      "date_type": [
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [
+        "慢速",
+        "中速"
+      ],
+      "weather": [
+        "晴",
+        "阴",
+        "雨"
+      ],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [
+        "其他蓝牙",
+        "无"
+      ],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-08:59",
+        "12:00-17:59",
+        "21:00-23:59"
+      ],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据",
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [
+        "工作日"
+      ],
+      "poi_type": [],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "波动"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "写字楼",
+        "在途",
+        "公园",
+        "图书馆",
+        "餐厅",
+        "机场",
+        "酒店",
+        "商场",
+        "海边",
+        "户外",
+        "高铁站",
+        "地铁站"
+      ],
+      "movement_status": [
+        "高速"
+      ],
+      "weather": [],
+      "physical_activity": [
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "静息",
+        "高"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [
+        "车载"
+      ],
+      "questionnaire_info": []
+    }
+  },
+  {
+    "scene_name": "雨天发呆",
+    "strong_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [
+        "静止"
+      ],
+      "weather": [
+        "雨"
+      ],
+      "physical_activity": [
+        "静止"
+      ],
+      "heart_rate_level": [
+        "静息"
+      ],
+      "network_status": [],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "related_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "住宅区",
+        "写字楼",
+        "餐厅"
+      ],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [
+        "稍高"
+      ],
+      "network_status": [
+        "wifi"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "unrelated": {
+      "time_period": [
+        "00:00-23:59"
+      ],
+      "date_type": [
+        "工作日",
+        "周末",
+        "假日"
+      ],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据（弱）"
+      ],
+      "bluetooth_connection": [
+        "有线耳机",
+        "无线耳机",
+        "其他蓝牙",
+        "无",
+        "车载"
+      ],
+      "questionnaire_info": [
+        "学生",
+        "女性",
+        "养宠物",
+        "母婴用户"
+      ]
+    },
+    "negative_correlation_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [],
+      "movement_status": [],
+      "weather": [],
+      "physical_activity": [],
+      "heart_rate_level": [],
+      "network_status": [
+        "蜂窝数据"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
+    },
+    "exclusion_index": {
+      "time_period": [],
+      "date_type": [],
+      "poi_type": [
+        "户外",
+        "公园",
+        "海边"
+      ],
+      "movement_status": [
+        "慢速",
+        "中速",
+        "高速"
+      ],
+      "weather": [
+        "晴",
+        "阴"
+      ],
+      "physical_activity": [
+        "步行",
+        "跑步",
+        "驾车",
+        "骑行"
+      ],
+      "heart_rate_level": [
+        "高",
+        "波动"
+      ],
+      "network_status": [
+        "无网络",
+        "飞行模式"
+      ],
+      "bluetooth_connection": [],
+      "questionnaire_info": []
     }
   }
 ]
