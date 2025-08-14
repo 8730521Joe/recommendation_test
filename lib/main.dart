@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 
 import 'simulator_page.dart';
 import 'real_environment_page.dart';
+import 'settings_page.dart'; // 导入设置页面
 
 void main() {
   runApp(const MyApp());
@@ -34,6 +35,19 @@ class ModeSelectionPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('场景感知系统'),
         centerTitle: true,
+        actions: [
+          // 添加设置按钮到AppBar
+          IconButton(
+            icon: const Icon(Icons.settings),
+            tooltip: '设置',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SettingsPage()),
+              );
+            },
+          ),
+        ],
       ),
       body: Container(
         padding: const EdgeInsets.all(32.0),
@@ -90,6 +104,21 @@ class ModeSelectionPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const RealEnvironmentPage()),
+                );
+              },
+            ),
+            const SizedBox(height: 20),
+            // 添加设置按钮作为第三个选项
+            _buildModeButton(
+              context,
+              title: '设置',
+              subtitle: '管理系统权限和应用设置',
+              icon: Icons.settings,
+              color: Colors.purple,
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SettingsPage()),
                 );
               },
             ),

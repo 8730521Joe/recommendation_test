@@ -83,7 +83,80 @@ class ConfidenceCalculator {
       }
     }
     
+    // 规则4: 基于时间的特殊规则
+    final timePeriod = userInput['time_period']?.toString() ?? '';
+    if (timePeriod.isNotEmpty) {
+      final currentHour = _parseHourFromTime(timePeriod);
+      
+      // 若时间不处于21:00-06:59，则"深度睡眠"的置信度减10
+      if (sceneName == '深度睡眠') {
+        if (!_isInTimeRange(currentHour, 21, 6, true)) {
+          adjustment -= 10;
+          print('特殊规则调整: ${sceneName} - 非睡眠时间段(21:00-06:59)，减10分');
+        }
+      }
+      
+      // 若时间不处于12:00-15:59，则"睡个午觉"的置信度减10
+      if (sceneName == '睡个午觉') {
+        if (!_isInTimeRange(currentHour, 12, 15, false)) {
+          adjustment -= 10;
+          print('特殊规则调整: ${sceneName} - 非午休时间段(12:00-15:59)，减10分');
+        }
+      }
+      
+      // 若时间不处于20:00-03:59，则"深夜emo"的置信度减10
+      if (sceneName == '深夜emo') {
+        if (!_isInTimeRange(currentHour, 20, 3, true)) {
+          adjustment -= 10;
+          print('特殊规则调整: ${sceneName} - 非深夜时间段(20:00-03:59)，减10分');
+        }
+      }
+    }
+    
+    // 规则5: 基于日期类型的特殊规则
+    final dateType = userInput['date_type']?.toString() ?? '';
+    
+    // 若日期类型不是"工作日"，则"沉浸工作"的置信度减10
+    if (sceneName == '沉浸工作' && dateType != '工作日') {
+      adjustment -= 10;
+      print('特殊规则调整: ${sceneName} - 非工作日(${dateType})，减10分');
+    }
+    
+    // 若日期类型不是"工作日"，则"工作通勤"的置信度减10
+    if (sceneName == '工作通勤' && dateType != '工作日') {
+      adjustment -= 10;
+      print('特殊规则调整: ${sceneName} - 非工作日(${dateType})，减10分');
+    }
+    
     return adjustment;
+  }
+  
+  /// 从时间字符串中解析小时数
+  static int _parseHourFromTime(String timeString) {
+    try {
+      final parts = timeString.split(':');
+      if (parts.length >= 1) {
+        return int.parse(parts[0]);
+      }
+    } catch (e) {
+      print('解析时间失败: $timeString');
+    }
+    return 0;
+  }
+  
+  /// 判断当前小时是否在指定时间范围内
+  /// [currentHour] 当前小时 (0-23)
+  /// [startHour] 开始小时
+  /// [endHour] 结束小时
+  /// [crossMidnight] 是否跨越午夜 (如21:00-06:59)
+  static bool _isInTimeRange(int currentHour, int startHour, int endHour, bool crossMidnight) {
+    if (crossMidnight) {
+      // 跨越午夜的情况 (如21:00-06:59)
+      return currentHour >= startHour || currentHour <= endHour;
+    } else {
+      // 不跨越午夜的情况 (如12:00-15:59)
+      return currentHour >= startHour && currentHour <= endHour;
+    }
   }
 
   /// 计算单个分类的分数
